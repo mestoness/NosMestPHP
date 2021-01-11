@@ -17,7 +17,7 @@ echo $key["txt"]."<br>";
 
 //dbSelectWhere test
 foreach (dbSelectWhere($db,"sifre","txt","DSDS") as $key) {
-	echo "<hr>".$key["txt"]."<br>";
+echo "<hr>".$key["txt"]."<br>";
 }
 
 
@@ -26,7 +26,7 @@ sessionControl($db,"users","id","oturum","login.php");
 
 
 //sessionControl2 test
-sessionControl($db,"users","query1","session1","query2","session2","login.php");
+sessionControl2($db,"users","query1","session1","query2","session2","login.php");
 
 
 //filterHtml TEST
