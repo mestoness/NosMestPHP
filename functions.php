@@ -132,7 +132,6 @@ function sweatAlert($text,$title,$icon){
 
 
 function sessionControl($db,$tableName,$tableQueryName,$sessionName,$headerLocation){
-  //example => sessionControl($db,"users","id","logged","login.php");
   /*********************************************************************************************/
   if (isset($_SESSION["$sessionName"])) {
   $sessionControl=$db->prepare("SELECT * FROM $tableName where $tableQueryName=:$tableQueryName");
@@ -150,7 +149,6 @@ function sessionControl($db,$tableName,$tableQueryName,$sessionName,$headerLocat
 }
 
 function sessionControl2($db,$tableName,$tableQueryName,$tableQueryName2,$sessionName,$sessionName2,$headerLocation){
-  //example => sessionControl($db,"users","id","logged","login.php");
   /*********************************************************************************************/
   if (isset($_SESSION["$sessionName"])) {
   $sessionControl=$db->prepare("SELECT * FROM $tableName where $tableQueryName=:$tableQueryName and $tableQueryName2=:$tableQueryName2");
