@@ -47,7 +47,7 @@ echo stringGen();
 //sweatAlert2 Examples
 echo sweatAlert("success","success login","success");
 ```
-
+Usage =>
 
 ``` html
 
