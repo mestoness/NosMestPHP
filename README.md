@@ -2,6 +2,8 @@
 
 ``` php
 
+//Some Examples
+
 // jsAlert test
 echo jsAlert("Kayıt Başarılı.");
 		
@@ -9,7 +11,7 @@ echo jsAlert("Kayıt Başarılı.");
 
 //dbSelect test
 foreach (dbSelect($db,"sifre") as $key) {
-	echo $key["txt"]."<br>";
+echo $key["txt"]."<br>";
 }
 
 
@@ -17,6 +19,14 @@ foreach (dbSelect($db,"sifre") as $key) {
 foreach (dbSelectWhere($db,"sifre","txt","DSDS") as $key) {
 	echo "<hr>".$key["txt"]."<br>";
 }
+
+
+//sessionControl test
+sessionControl($db,"users","id","oturum","login.php");
+
+
+//sessionControl2 test
+sessionControl($db,"users","query1","session1","query2","session2","login.php");
 
 
 //filterHtml TEST
