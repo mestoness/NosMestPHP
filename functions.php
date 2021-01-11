@@ -61,6 +61,12 @@ function shorterString($string, $str = 10)
 	//@ahmetbakimms
 
 	}
+function sqlInj($post){
+//@ahmetbakimms
+
+    $query=htmlspecialchars(strip_tags(addslashes($post)));
+    return $query;
+}
 function trimData($query)
 {
 //Blank Delete
